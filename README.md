@@ -1,1 +1,1 @@
-# learn-django
+# Learn Django
