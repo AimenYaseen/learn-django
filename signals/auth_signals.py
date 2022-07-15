@@ -7,7 +7,7 @@ from django.dispatch import receiver
 def login_successful(sender, request, user, **kwargs):
     print("----------------------------------------")
     print("Login Successful!")
-    print("User : ", sender)
+    print("Sender : ", sender)
     print("Request : ", request)
     print("User : ", user)
     print("keyword Arguments : ", kwargs)
@@ -21,7 +21,7 @@ def login_successful(sender, request, user, **kwargs):
 def login_fail(sender, request, credentials, **kwargs):
     print("----------------------------------------")
     print("Login Fail!")
-    print("User : ", sender)
+    print("Sender : ", sender)
     print("Request : ", request)
     print("Credentials : ", credentials)
     print("keyword Arguments : ", kwargs)
@@ -32,7 +32,7 @@ def login_fail(sender, request, credentials, **kwargs):
 def logout_successful(sender, request, user, **kwargs):
     print("----------------------------------------")
     print("Logout Successful!")
-    print("User : ", sender)
+    print("Sender : ", sender)
     print("Request : ", request)
     print("User : ", user)
     print("keyword Arguments : ", kwargs)
