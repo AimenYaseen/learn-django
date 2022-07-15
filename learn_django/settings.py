@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'signals.apps.SignalsConfig',
+    'learn_middlewares.apps.LearnMiddlewaresConfig'
 ]
 
 MIDDLEWARE = [
