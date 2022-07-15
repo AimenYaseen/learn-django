@@ -18,7 +18,7 @@ def called_before_request(sender, environ, **kwargs):
 @receiver(request_finished)
 def called_after_request(sender, **kwargs):
     print("----------------------------------------")
-    print("Before Request!")
+    print("After Request!")
     print("Sender : ", sender)
     print("keyword Arguments : ", kwargs)
     print("----------------------------------------")
