@@ -6,5 +6,5 @@ class SignalsConfig(AppConfig):
     name = 'signals'
 
     def ready(self):
-        from . import auth_signals
+        from . import auth_signals, model_signals, req_resp_signals
         return super().ready()
