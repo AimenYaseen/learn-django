@@ -20,5 +20,6 @@ from signals import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('customSignal/', views.send_signal),
-    path('middleware/', include('learn_middlewares.urls'))
+    path('middleware/', include('learn_middlewares.urls')),
+    path('test/', include('learn_unit_testing.urls'))
 ]
