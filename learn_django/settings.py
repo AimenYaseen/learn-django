@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'signals.apps.SignalsConfig',
+    'learn_middlewares.apps.LearnMiddlewaresConfig'
 ]
 
 MIDDLEWARE = [
@@ -53,6 +54,10 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'learn_middlewares.func_middlewares.function_middleware',
+    'learn_middlewares.func_middlewares.function_middleware2',
+    'learn_middlewares.class_middlewares.MyProcessMiddleware',
+    'learn_middlewares.class_middlewares.ExceptionMiddleware',
 ]
 
 ROOT_URLCONF = 'learn_django.urls'
