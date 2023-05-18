@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_timezone.apps.DjangoTimezoneConfig',
     'models.apps.ModelsConfig',
     'signals.apps.SignalsConfig',
     'learn_middlewares.apps.LearnMiddlewaresConfig',
@@ -118,7 +119,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = env('TIME_ZONE', default='Africa/Cairo')
 
 USE_I18N = True
 
