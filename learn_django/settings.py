@@ -42,9 +42,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'models.apps.ModelsConfig',
     'signals.apps.SignalsConfig',
     'learn_middlewares.apps.LearnMiddlewaresConfig',
-    'learn_unit_testing.apps.LearnUnitTestingConfig'
+    'learn_unit_testing.apps.LearnUnitTestingConfig',
 ]
 
 MIDDLEWARE = [
